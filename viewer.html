@@ -2,8 +2,22 @@
 <html>
 	<head>
 		<title>Full Images</title>
+		<link rel="stylesheet" href="scripts/style.css">
+		<script src="scripts/data.js"></script>
 	</head>
 	<body>
-		<h1>Test</h1>
+		<div class="center text-center bg">
+			<h1 id="image-name-heading">image set name here</h1>
+			<a class="goback" href="./index.html">Go Back</a>
+			<p id="this-desc">Click on image for full display size.</p>
+			<button id="linktoggler" onclick="togglelinks();">Disable Links</button>
+		</div>
+		<div class="spacing"></div>
+		<div class="center content-center" id="images-container">
+			<a id="full-img-container" href="./images/ph.png" target="_blank" class="imglink">
+				<img id="full-img-container" class="img-preview" src="./images/ph.png" hidden><img>
+			</a>
+		</div>
+		<script src="scripts/imagery.js"></script>
 	</body>
 </html>
