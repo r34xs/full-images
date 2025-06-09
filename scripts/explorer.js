@@ -11,6 +11,7 @@ function dupeImageSet(name, url) {
 	image.src = url;
 	hyperl.href = `./viewer.html?set=${name}`;
 	newimgset.hidden = false;
+	hyperl.childNodes[2].hidden = true;
 };
 
 for (let setName in FullImgs) {
